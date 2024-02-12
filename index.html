@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Link after 10 Seconds</title>
+    <style>
+        /* CSS for responsive image */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto; /* Center the image horizontally */
+        }
+    </style>
+    <script>
+        // Function to open the link after 10 seconds
+        function openLink() {
+            setTimeout(function() {
+                window.location.href = 'https://www.google.com/'; // Replace 'https://www.cat.com' with your desired link
+            }, 10000); // 10000 milliseconds = 10 seconds
+        }
+    </script>
+</head>
+<body onload="openLink()">
+    <h1>Waiting to open link...</h1>
+    <img src="https://blog.admixer.com/wp-content/uploads/2020/06/mobile-games-1616-790-4.png" alt="" srcset="">
+</body>
+</html>
